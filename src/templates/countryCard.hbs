@@ -1,0 +1,21 @@
+{{#each this}}
+  <div class='country wrapper'>
+    <div class='country_descr'>
+      <h1 class='country__title'>{{name}}</h1>
+      <p class='country__text'><b>Capital:&emsp;</b><span class='text'>{{capital}}</span></p>
+      <p class='country__text'><b>Population:&emsp;</b><span class='text'>{{population}}</span></p>
+      <p class='country__text'><b>Languages:</b></p>
+      <ul class='country__list'>
+        {{#each languages}}
+          <li class='country__item'>
+            <p class='text'>
+              {{name}}
+            </p>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+
+    <img src='{{flag}}' alt='{{name}}' class='country__flag' width='400' />
+  </div>
+{{/each}}

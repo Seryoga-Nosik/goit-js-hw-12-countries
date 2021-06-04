@@ -1,0 +1,10 @@
+<div class='countries wrapper'>
+  <ul class='countries__list'>
+    {{#each this}}
+      <li class='countries__item'>
+        <img src='{{flag}}' alt='{{name}}' class='countries__flag' />
+        <p class='text countries__name'>{{name}}</p>
+      </li>
+    {{/each}}
+  </ul>
+</div>
